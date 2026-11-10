@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Create account | Carolina Food Connect</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body class="auth-page">
+<main class="auth-shell">
+  <a class="brand brand-auth" href="login.html"><span class="brand-mark">CF</span><span>Carolina Food Connect<small>Student Spending Initiative</small></span></a>
+  <section class="auth-card">
+    <div class="eyebrow">GET STARTED</div><h1>Create your account.</h1><p class="muted">Choose the account type that matches how you will use the platform.</p>
+    <form id="signupForm">
+      <label for="fullName">Name or business contact</label><input id="fullName" required placeholder="Your name">
+      <label for="signupEmail">Email address</label><input id="signupEmail" type="email" required placeholder="you@example.com">
+      <label for="role">Account type</label>
+      <select id="role" required><option value="student">UNC Student</option><option value="business">Small Business</option><option value="admin">Campus Admin (demo only)</option></select>
+      <label for="gradYear">Graduation year <span class="optional">(students only)</span></label><input id="gradYear" type="number" min="2026" max="2035" placeholder="2027">
+      <label for="signupPassword">Create password</label><input id="signupPassword" type="password" minlength="8" required placeholder="At least 8 characters">
+      <p class="hint">Prototype validation only. Production passwords must be checked and securely hashed by the server.</p>
+      <button class="btn btn-primary btn-full" type="submit">Create demo account <span>→</span></button><p class="form-message" id="signupMessage" aria-live="polite"></p>
+    </form>
+    <p class="auth-bottom">Already have an account? <a class="text-link" href="login.html">Sign in</a></p>
+  </section><p class="auth-foot">Admin account creation would require invitation and approval in a real deployment.</p>
+</main><script src="assets/js/app.js"></script>
+</body></html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in | Carolina Food Connect</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <a class="brand brand-auth" href="login.html"><span class="brand-mark">CF</span><span>Carolina Food Connect<small>Student Spending Initiative</small></span></a>
+    <section class="auth-card">
+      <div class="eyebrow">WELCOME TO CAROLINA FOOD CONNECT</div>
+      <h1>Sign in to continue.</h1>
+      <p class="muted">Find affordable food, make informed dining choices, and connect with campus resources.</p>
+      <div class="sso-buttons">
+        <button class="btn btn-outline btn-full" type="button" data-demo-sso="Microsoft">Continue with Microsoft</button>
+        <button class="btn btn-outline btn-full" type="button" data-demo-sso="Google">Continue with Google</button>
+      </div>
+      <div class="separator"><span>or sign in with a demo account</span></div>
+      <form id="loginForm">
+        <label for="email">Email address</label>
+        <input id="email" type="email" placeholder="you@unc.edu" required>
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter your password" required>
+        <div class="form-row"><label class="check"><input type="checkbox" id="remember"> Remember me on this device</label><a href="#" class="text-link" data-toast="Password recovery will be connected to the authentication provider.">Forgot password?</a></div>
+        <button class="btn btn-primary btn-full" type="submit">Sign in <span>→</span></button>
+        <p class="form-message" id="loginMessage" aria-live="polite"></p>
+      </form>
+      <p class="auth-bottom">New to the platform? <a class="text-link" href="signup.html">Create an account</a></p>
+    </section>
+    <p class="auth-foot">A UNC student-centered concept · Demo prototype</p>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
